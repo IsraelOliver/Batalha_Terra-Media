@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <title>Jogabilidade e Personagens</title>
+    <link rel="stylesheet" href="btm/css/Style_2.css">
+    <link rel="preload" href="btm/css/Style_2.css" as="styles">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar fixed-bottom">
+        <a class="navbar-brand mx-4">BTM - Israel</a>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar fixed-top">
+        <a class="navbar-brand mx-4">BTM - Israel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="Pag_1.html">Inicío</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Pag_2.html">Jogabilidade e Personagem</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Pag_3.html">Criação de Personagem</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Pag_4.html">Sobre</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="fundo">
+        <nav>
+            <h1 id="joga">Jogabilidade</h1>
+
+            <p style="margin-top: 40px; margin-bottom: 40px;">
+                 O jogo de batalha entre personagens baseados na Terra-Média que é o mundo do
+                Senhor dos Anéis. A batalha ocorre por turnos de forma automática no formato de todos
+                contra todos, considerando as características dos personagens. Cada personagem é de uma
+                nação e possui 5 habilidades.
+            </p>
+
+            <hr style="margin-left: 50px;" width="1200">
+
+            <h2>Batalha</h2>
+            <div  id="img" style="float: right">
+                <img src="btm/Img/fig_1.png" alt="img" height="400" width="500">
+            </div>
+
+            <div>
+                <p style="margin-top: 15px;" class="bat">
+                    A batalha é realizada em um cenário fixo no qual podem ser alocados até oito
+                    jogadores, sendo que só pode haver um personagem de cada nação. O cenário é fixo porque
+                    a batalha inteira ocorre neste único cenário escolhido. Dentre os cenários possíveis, o jogo
+                    pode definir qualquer uma das oito casas das nações.
+                </p>
+
+                <p class="bat">
+                    Não existem alianças e “amizades” entre os personagens, portanto eles se
+                    enfrentam em duelos de um contra o outro em cada rodada e o vencedor avança para a
+                    próxima rodada. No início da rodada, os personagens são distribuídos aleatoriamente em
+                    pares para realizarem a batalha e, caso a quantidade de personagens na batalha seja
+                    ímpar, um deles ficará fora da batalha e se classificará automaticamente para a rodada
+                    seguinte. Os vencedores de uma rodada são novamente distribuídos aleatoriamente para
+                    se enfrentarem em uma nova batalha. As rodadas são repetidas de acordo com a
+                    quantidade restante de personagens na arena, até que ocorra a batalha final e seja
+                    definido um personagem como o vencedor. O jogador que “sobrou” na rodada anterior não
+                    pode sobrar novamente na rodada seguinte. A Figura 1 exemplifica um cenário com cinco
+                    jogadores.              
+                </p>
+            </div>
+
+            <h2>Duelo</h2>
+
+                <div class="du">
+                    <p style="margin-top: 15px;">
+                        A batalha é realizada em turnos de duelos diretos entre dois personagens, conforme
+                        foi descrito anteriormente. Porém, é preciso descrever com mais detalhes como se deve
+                        determinar o vencedor de cada duelo.
+                    </p>
+
+                    <P>
+                        Antes, deve-se observar que um duelo possui como informações de entrada: o
+                        cenário da batalha e os dois personagens do confronto com as suas características. Após o
+                        confronto, a informação de saída é o vencedor do confronto com os danos que sofreu e
+                        infringiu. Em outras palavras, conforme explicita a Figura 2, é preciso saber explicar o que
+                        ocorreu no duelo.
+                    </P>
+                    
+                    <img src="btm/Img/Fig_2.png" alt="img" height="200" width="600">
+
+                    <p style="margin-top: 15px;">
+                        O confronto ocorre em turnos no qual cada personagem faz uma jogada que pode
+                        ser ataque, defesa ou movimentação em direção ao adversário.
+                    </p>
+
+                    <p>
+                        O ataque é o golpe desferido pelo personagem no adversário. O golpe possui uma
+                        probabilidade de atingir o adversário e essa probabilidade é calculada de acordo com a sua
+                        habilidade naquele tipo de ataque. O ataque pode ser do tipo:
+                    </p>
+                    <ul>
+                        <p>|  ataque curto é o ataque no qual o jogador está entre zero e um passo de distância do adversário; e</p>
+
+                        <p>| ataque longo é o ataque no qual o jogador está entre dois e dez passos de distância.</p>
+                    </ul>
+                    <p>
+                        Considera-se que o ataque atingiu o adversário se ele estiver dentro do raio de ação
+                        dos tipos de ataques previstos. Portanto, não é possível realizar ataque em distância
+                        superior a dez passos. Caso o ataque atinja o adversário, o dano causado será calculado
+                        com base nos fatores: habilidade do personagem no tipo de ataque desferido, habilidade
+                        do adversário em realizar a defesa, se o adversário está realizando a defesa e bônus ou
+                        penalidades causadas pelo cenário da batalha.
+                    </p>
+
+                    <p>
+                        A defesa é a ação que o personagem realiza para se proteger e reduzir os danos
+                        causados por golpes que podem ser desferidos pelo adversário. A defesa possui uma
+                        probabilidade de reduzir o dano do ataque e essa probabilidade é calculada de acordo com
+                        a sua habilidade naquele tipo de ataque. A defesa pode ser do tipo:
+                    </p>
+
+                    <ul>
+                        <p>| defesa curta é aquela que visa proteger o personagem do ataque curto desferido pelo adversário; e</p>
+
+                        <p>| defesa longa é aquela que visa proteger o personagem do ataque longo desferido pelo adversário.</p>
+                    </ul>
+
+                    <p>
+                        Considera-se que foi realizada a defesa se a ação do personagem é de defesa e se
+                        o adversário deferiu algum golpe contra ele. Caso ocorra a defesa, a redução do dano
+                        causado deve considerar o tipo de ataque recebido, habilidade do adversário no tipo de
+                        ataque desferido, a capacidade do personagem em realizar a defesa e bônus ou
+                        penalidades causadas pelo cenário da batalha.
+                    </p>
+
+                    <p>
+                        Movimentação: é o avanço do personagem na arena do confronto. Esse avanço se
+                        dá um passo por vez até que não existam mais passos entre o personagem e o adversário.
+                    </p>
+
+                </div>
+
+            <hr style="margin-left: 50px;" width="1200">
+
+        <div>
+
+            <h1 id="person">Personagens</h1>
+
+            <p>
+                As habilidades que os personagens possuem são força, velocidade, precisão,
+                armadura e recuperação. Além da nacionalidade e das 5 habilidades, o personagem possui
+                seus pontos de energia e um nome para identificá-lo ao longo de suas interações no jogo.
+                No início do jogo, o personagem possui 100 pontos de energia e outros 100 pontos de
+                habilidades que devem ser distribuídos entre as habilidades da forma que o jogador
+                preferir.
+            </p>
+
+            <ul>
+                <P>
+                    >Força: a capacidade que o personagem possui de infringir danos no adversário no combate a curta distância;
+                </P>
+
+                <P>
+                    >Precisão: a precisão denota a capacidade na qual o personagem tem para infringir danos no adversário à longa distância;
+                </P>
+
+                <P>
+                    >Velocidade: o tempo no qual o personagem leva para se aproximar do adversário;
+                </P>
+                <P>
+                    >Armadura: o quanto reduz o impacto dos ataques do adversário, independente da distância na qual os ataques são realizados;
+                </P>
+                <P>
+                    >Recuperação: a capacidade de recuperar pontos para a próxima batalha.
+                </P>
+
+            </ul>
+
+            <p>
+                Neste jogo, foram selecionadas as seguintes nações da Terra-Média: Orc Snaga,
+                Uruk-hai, Cavaleiro de Rohan, Guerreiro de Gondor, Hobbit, Elfo da Floresta, Elfo de
+                Lothlórien e anão. A casa de cada nação é, respectivamente, Cirith Ungol, Portão Negro,
+                Abismo de Helm, Minas Tirith, O Condado, Floresta das Trevas ou Mirkwood, Caras
+                Galadhon ou Cidade das Árvores e Colinas de Ferro. A Tabela 1 descreve a ligação entre
+                cada nação e a sua casa.
+            </p>
+
+            <img src="btm/Img/Tabela_1.png" alt="img" height="275" width="500">
+        </div>
+        </nav>
+
+    </div>
+
+</body>
+</html>

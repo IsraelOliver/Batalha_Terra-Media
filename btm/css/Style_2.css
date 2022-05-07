@@ -1,0 +1,54 @@
+
+body{
+    background-image: url('https://wallpaperaccess.com/full/92762.jpg');
+    background-attachment: fixed;
+}
+
+p{
+    text-indent: 40px;
+    text-align: left;
+    margin-left: 60px;
+    margin-right: 60px;
+    color: rgb(226, 226, 226);
+}
+
+h2{
+    text-align: left;
+    margin-left: 110px;
+}
+
+#img{
+    margin-right: 50px;
+    margin-top: 40px;
+}
+
+.bat{
+    margin-left: 150px;
+    margin-right: 650px;
+}
+
+.du{
+    margin-left: 90px;
+    margin-right: 50px;
+}
+
+#joga{
+    text-align: left;
+    margin-top: 80px;
+    margin-left: 40px;
+}
+
+#person{
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.fundo{
+    width: 1300px;
+	height: 2700px;
+	border: 2px solid #000;
+	margin: auto;
+	text-align: center;
+    background-color: rgba(90, 0, 126, 0.8);
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <title>Jogabilidade e Personagens</title>
+
+    <link rel="stylesheet" href="btm/css/Styles_3.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar fixed-bottom">
+        <a class="navbar-brand mx-4">BTM - Israel</a>
+    </nav>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar fixed-top">
+        <a class="navbar-brand mx-4">BTM - Israel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="Pag_1.html">Inicío</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Pag_2.html">Jogabilidade e Personagem</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Pag_3.html">Criação de Personagem</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Pag_4.html">Sobre</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h4>Personagem 1</h4>
+
+    <div id="person">
+        <div>
+            <input type="checkbox" id="incluir" name="Incluir">
+            <label for="scales">Incluir este personagem na batalha</label>
+
+            <table id="nome">
+                <tr>
+                    <td>Nome:</td>
+                    <td><input type="text" name="nome" size="40"> <br /></td>
+                </tr>
+        
+        </table>
+
+        </div>
+
+        <div id="nacao">
+            <a>Nação</a>
+
+            <div id="sel_nacao">
+                <form>
+                        <input type="radio" name="OPCAO" value="op1" CHECKED>Anão
+                        <input type="radio" name="OPCAO" value="op2"> Hobbit
+                        <input type="radio" name="OPCAO" value="op3"> Cavaleiro de Rotthan
+                        <input type="radio" name="OPCAO" value="op4"> Guerreiro de Gondor
+                        <input type="radio" name="OPCAO" value="op5"> Elfo da Floresta
+                        <input type="radio" name="OPCAO" value="op6"> Elfo de Lothlórien
+                        <input type="radio" name="OPCAO" value="op7"> Orc Snaga
+                        <input type="radio" name="OPCAO" value="op8"> Uruk-hai
+                </form>
+            </div>
+        </div>
+
+        <div id="hab">
+            <h4>Habilidades</h4>
+            <input type="range">
+        </div>
+        
+    </div>
+
+</body>
+</html>
