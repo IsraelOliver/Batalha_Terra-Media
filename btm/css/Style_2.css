@@ -1,10 +1,52 @@
+header {
+    background-color: #2e2e2e;
+    height: 40px;
+    width: 100%;
+    border-bottom: 3px solid #a57a1d;
+    position: fixed;
+}
+
+
+h1 {
+    color: #ffffff;
+    padding-top: 7px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    margin: 0px;
+    font-family: Bebas Neue;
+}
+
+.menu {
+    list-style: none;
+    color: #ffffff;
+    position: absolute;
+    right: 20px;
+    top: 3px;
+}
+
+.menu li{
+    display: inline;
+    font-family: Banda Niera;
+    font-size: 25px;
+    padding: 10px 10px;
+}
+
+a {
+    color: #ffffff;
+    transition-duration: 0.5s;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a57a1d;
+}
 
 body{
     background-image: url('https://wallpaperaccess.com/full/92762.jpg');
     background-attachment: fixed;
 }
 
-p{
+.par{
     text-indent: 40px;
     text-align: left;
     margin-left: 60px;
@@ -51,4 +93,16 @@ h2{
 	margin: auto;
 	text-align: center;
     background-color: rgba(90, 0, 126, 0.8);
+}
+
+footer {
+    background: #2e2e2e;
+    text-align: center;
+    color:#ffffff;
+    border-top: 1px solid #333;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    position: fixed;
+    width: 100%;
 }

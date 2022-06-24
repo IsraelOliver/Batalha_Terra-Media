@@ -1,38 +1,81 @@
+header {
+    background-color: #2e2e2e;
+    height: 40px;
+    border-bottom: 3px solid #a57a1d;
+}
+
+h1 {
+    color: #ffffff;
+    padding-top: 7px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    margin: 0px;
+    font-family: Bebas Neue;
+}
+
+.menu {
+    list-style: none;
+    color: #ffffff;
+    position: absolute;
+    right: 20px;
+    top: 3px;
+}
+
+.menu li{
+    display: inline;
+    font-family: Banda Niera;
+    font-size: 25px;
+    padding: 10px 10px;
+}
+
+a {
+    color: #ffffff;
+    transition-duration: 0.5s;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a57a1d;
+}
+
 body{
-    background: rgb(100,0,255);
-    background: radial-gradient(circle, rgba(100,0,255,1) 0%, rgba(63,137,153,1) 48%, rgba(105,0,144,1) 100%);
+    background: #222222;
 }
 
-h1{
-    padding: 50px;
-    padding-bottom: 0px;
-    margin-top: 40px;
-    color: rgb(255, 166, 0);
-    
-}
-
-#sobre{
-    width: 1500px;
-	height: 2700px;
-	border: 2px solid #000;
-	margin: auto;
-    background-color: rgba(40, 11, 46, 0.493);
-}  
-
-#sobre p {
-    margin-left: 60px;
-    margin-right: 500px;
-    color: orange;
-}
-
-#img{
-    margin-right: 30px;
-    margin-top: 80px;
-    border: 3px solid orange;
+#foto {
+    display: block;
+    margin: 100px auto 30px;
+    width: 400px;
+    border: 5px solid #a57a1d;
     border-radius: 50%;
-    overflow: hidden
 }
 
-hr{
-    color: white;
+.isr {
+    text-align: center;
+    font-family: Banda Niera;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+hr {
+    margin: 60px 60px 20px;
+    height: 3px;
+    border: none;
+    background: #a57a1d;
+}
+
+.par {
+    font-family: Comic Sans MS;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 10px 150px;
+}
+
+footer {
+    background: #2e2e2e;
+    text-align: center;
+    color:#ffffff;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
 }
